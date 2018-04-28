@@ -32,7 +32,7 @@ The code in this project assumes you've used an online tool (e.g. SurveyMonkey o
 ------
 I hope you find this useful!
 
-Cheers, 
+Cheers,
 Xavier 
 
 https://xavierrusso.com
