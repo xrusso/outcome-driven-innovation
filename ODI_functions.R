@@ -110,7 +110,7 @@ export_csv <- function(outcome_names,imp_scores,sat_scores,filename="ODI-export.
   if(sorted){
     exportdata <- exportdata[with(exportdata,order(-opp_scores)),]
   }
-  write.csv(exportdata,file=filename)
+  write.csv(exportdata,file=filename,row.names=FALSE)
   print("Data successfully exported to CSV")
   if(printout) return(exportdata)
   }
