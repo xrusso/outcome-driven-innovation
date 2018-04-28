@@ -29,4 +29,10 @@ The code in this project assumes you've used an online tool (e.g. SurveyMonkey o
    * n columns of Satisfaction ratings (1 to 5), one per outcome
    * arbitrary number of other columns e.g. for demographic data
    
-   
+------
+I hope you find this useful!
+
+Cheers, 
+Xavier 
+
+https://xavierrusso.com
