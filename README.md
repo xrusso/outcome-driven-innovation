@@ -1,6 +1,6 @@
 # Outcome Driven Innovation (ODI) analysis in R
 
-This project uses the statistical programming language R to help with the analysis of survey results as per the Outcome Driven Innovation (ODI) methodology developed by Anthony Ulwick from [Strategyn](https://strategyn.com/). 
+This project uses the statistical programming language R to help with the analysis of survey results as per the Outcome Driven Innovation (ODI) methodology developed by Anthony Ulwick from [Strategyn](https://strategyn.com/). Please note  that the code here is simply my own attempt at implementing ODI and is not endorsed or otherwise affiliated with Strategyn. Use at your own risk!  
 
 ### A Quick Introduction to Outcome Driven Innovation
 The basic approach to implementing ODI can be summarized as:
