@@ -1,6 +1,6 @@
 # Outcome Driven Innovation (ODI) analysis in R
 
-This project uses the statistical programming language R to help with the analysis of survey results as per the Outcome Driven Innovation (ODI) methodology, as  described by Anthony Ulwick from [Strategyn](https://strategyn.com/) in his book ["What Customers Want"](https://www.amazon.com/What-Customers-Want-Outcome-Driven-Breakthrough/dp/0071408673). 
+This project uses the statistical programming language R to help with the analysis of survey results as per the Outcome Driven Innovation (ODI) methodology developed by Anthony Ulwick from [Strategyn](https://strategyn.com/). 
 
 ### A Quick Introduction to Outcome Driven Innovation
 The basic approach to implementing ODI can be summarized as:
@@ -11,11 +11,14 @@ The basic approach to implementing ODI can be summarized as:
 5. (Optional) Segment customers on the basis of their opportunity scores
 6. Use the results to focus, prioritize and guide your innovation efforts
 
-For an example case study of the ODI process in action, see my article:
-https://medium.com/envato/a-step-by-step-guide-to-using-outcome-driven-innovation-odi-for-a-new-product-ded320f49acb
+For more context, see my articles on Medium:
+* ["A step by step guide to using Outcome Driven Innovation (ODI) for a new product"](https://medium.com/envato/a-step-by-step-guide-to-using-outcome-driven-innovation-odi-for-a-new-product-ded320f49acb)
+* ["How we signed up 10,000 paying subscribers in just over a month"](https://medium.com/made-by-elements/how-we-signed-up-10-000-paying-subscribers-in-just-over-a-month-b7b8a94f0ec6)
 
-For an indication of how the results can be used to deliver significant impact, see:
-https://medium.com/made-by-elements/how-we-signed-up-10-000-paying-subscribers-in-just-over-a-month-b7b8a94f0ec6
+Other useful resources include:
+* ["What Customers Want"](https://www.amazon.com/What-Customers-Want-Outcome-Driven-Breakthrough/dp/0071408673) by Anthony Ulwick
+* ["Competing Against Luck"](https://www.amazon.com.au/Competing-Against-Luck-Innovation-Customer/dp/0062435612) by Clayton Christensen
+* ["Jobs to Be Done: Theory to Practice"](https://jobs-to-be-done-book.com/) by Anthony Ulwick
 
 ### Assumed Data Structure for Survey Results 
 The code in this project assumes you've used an online tool (e.g. SurveyMonkey or similar) to run the survey, and have a CSV or similar file that is structured as follows:
