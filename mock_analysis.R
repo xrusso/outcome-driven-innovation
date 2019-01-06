@@ -8,6 +8,8 @@ require("lattice")
 require("survival")
 require("Formula")
 require("ggplot2")
+require("png")
+
 source("ODI_functions.R")
 
 # import data 
@@ -22,8 +24,12 @@ imp_scores = scores(imp)
 sat_scores= scores(sat)
 opp_scores = opportunities(imp_scores,sat_scores)
 
-# draw opportunity map and export PNG
+# draw opportunity map and export as PNG
 draw_opportunitymap(imp_scores,sat_scores,export=TRUE)
 
 # export CSV with results of analysis
 export_csv(outcomes,imp_scores,sat_scores,filename="mock_analysis_results.csv",sorted=TRUE,printout=TRUE)
+
+# display opportunity map in Rstudio window
+img <- readPNG("OpportunityMap.png")
+grid::grid.raster(img)

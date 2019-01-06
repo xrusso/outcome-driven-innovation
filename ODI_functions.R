@@ -96,9 +96,9 @@ draw_opportunitymap <- function(imp_scores,sat_scores,export=FALSE,filename="Opp
   text(x=9.25,y=5.5,labels="Very Good \n(Opp>12)",col="forestgreen",srt=60)
   text(x=9.4,y=3,labels="Excellent \n(Opp>15)",col="darkgreen",srt=60)
 
-  if(export){dev.off()}  # activate PNG graphic device if export flag set
-  print("Opportunity Map successfully exported to PNG")
-  }
+  dev.off()  # close graphic device, brackets force visible printing to plot window
+  if(export){print("Opportunity Map successfully exported to PNG")}
+}
 
 # 6. OUTPUT CSV WITH ALL INFORMATION PER OUTCOME
 # set sorted flag to TRUE if you'd like results sorted from highest opportunity score to lowest
