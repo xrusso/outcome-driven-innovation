@@ -3,6 +3,11 @@
 # To adjust this code for other datasets, modify the 'import data' section based on your data structure. Depending on the exact format output by your survey tool, you may need to do extra work (e.g. convert strings to numbers, etc) 
 
 # import functions
+require("Hmisc")
+require("lattice")
+require("survival")
+require("Formula")
+require("ggplot2")
 source("ODI_functions.R")
 
 # import data 

@@ -29,6 +29,23 @@ The code in this project assumes you've used an online tool (e.g. SurveyMonkey o
    * n columns of Satisfaction ratings (1 to 5), one per outcome
    * arbitrary number of other columns e.g. for demographic data
    
+### A Basic Quickstart Guide to Using These Files
+* Install R from 
+* Install RStudio from 
+* Install Github Desktop from 
+* Clone this repository using Github Desktop (so you have the files locally)
+* Open RStudio and take the following steps via the console: 
+  * Set the working directory to where your files are e.g. `setwd("~/User/ODI_Analysis/outcome-driven-innovation")`
+  * Generate mock data file:  `source("generate_mock_data.R")`
+  * Run the analysis on the mock data: `source("mock_analysis.R")`
+* Look in the working directory to see 3 new files: 
+  * `mockdata.csv` is the CSV file containing an example of what survey results might look like
+  * `mock_analysis_results.csv` is a CSV file containing the results of the ODI analysis on the mock data
+  * `OpportunityMap.png` is an image file with a chart of mock outcomes plotted by Importance & Satisfaction scores     
+
+   
+Note that when you first type the `source` commands it may need to install a bunch of different R libraries. This should happen automatically, but if not check out the first few lines of `mock_analysis.R` for key packages to install.  
+
 ------
 I hope you find this useful!
 

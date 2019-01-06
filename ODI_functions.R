@@ -95,9 +95,10 @@ draw_opportunitymap <- function(imp_scores,sat_scores,export=FALSE,filename="Opp
   text(x=9.25,y=7.6,labels="Good \n(Opp>10)",col="lawngreen",srt=60)
   text(x=9.25,y=5.5,labels="Very Good \n(Opp>12)",col="forestgreen",srt=60)
   text(x=9.4,y=3,labels="Excellent \n(Opp>15)",col="darkgreen",srt=60)
-  
+
   if(export){dev.off()}  # activate PNG graphic device if export flag set
-}
+  print("Opportunity Map successfully exported to PNG")
+  }
 
 # 6. OUTPUT CSV WITH ALL INFORMATION PER OUTCOME
 # set sorted flag to TRUE if you'd like results sorted from highest opportunity score to lowest
@@ -106,12 +107,12 @@ draw_opportunitymap <- function(imp_scores,sat_scores,export=FALSE,filename="Opp
 export_csv <- function(outcome_names,imp_scores,sat_scores,filename="ODI-export.csv",sorted=FALSE,printout=FALSE){
   opp_scores = opportunities(imp_scores,sat_scores)
   opp_categories = categories(imp_scores,sat_scores)
-  exportdata <- data.frame(outcome_names,imp_scores,sat_scores,opp_scores,opp_categories)
+  exportdata <- data.frame(outcome_names,imp_scores,sat_scores,opp_scores,opp_categories,row.names=NULL)
   if(sorted){
     exportdata <- exportdata[with(exportdata,order(-opp_scores)),]
   }
   write.csv(exportdata,file=filename,row.names=FALSE)
-  print("Data successfully exported to CSV")
+  print("Results successfully exported to CSV")
   if(printout) return(exportdata)
   }
 
