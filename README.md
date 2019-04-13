@@ -24,22 +24,26 @@ Other useful resources include:
 The code in this project assumes you've used an online tool (e.g. SurveyMonkey or similar) to run the survey, and have a CSV or similar file that is structured as follows:
    * One row per survey respondent
    * Columns per survey question, no particular order assumed
-   * 1 column of outcome names
-   * n columns of Importance ratings (1 to 5), one per outcome
-   * n columns of Satisfaction ratings (1 to 5), one per outcome
+   * n columns of Importance ratings (1 to 5), one per outcome, in same order as outcome CSV below
+   * n columns of Satisfaction ratings (1 to 5), one per outcome, in same order as outcome CSV below
    * arbitrary number of other columns e.g. for demographic data
    
+You will also need a separate CSV for the list of outcomes, in the same order as in the data CSV above.
+   * 1 column of outcome IDs
+   * 1 column of outcome names
+   
 ### A Basic Quickstart Guide to Using These Files
-* Install R from 
-* Install RStudio from 
-* Install Github Desktop from 
+* Install R from https://cran.r-project.org/
+* Install RStudio Desktop from https://www.rstudio.com/products/rstudio/download/  
+* Install Github Desktop from https://desktop.github.com/
 * Clone this repository using Github Desktop (so you have the files locally)
 * Open RStudio and take the following steps via the console: 
   * Set the working directory to where your files are e.g. `setwd("~/User/ODI_Analysis/outcome-driven-innovation")`
   * Generate mock data file:  `source("generate_mock_data.R")`
   * Run the analysis on the mock data: `source("mock_analysis.R")`
-* Look in the working directory to see 3 new files: 
+* Look in the working directory to see 4 new files: 
   * `mockdata.csv` is the CSV file containing an example of what survey results might look like
+  * `mockoutcomes.csv` is the CSV file containing a list of mock outcome IDs and outcome names 
   * `mock_analysis_results.csv` is a CSV file containing the results of the ODI analysis on the mock data
   * `OpportunityMap.png` is an image file with a chart of mock outcomes plotted by Importance & Satisfaction scores     
 
