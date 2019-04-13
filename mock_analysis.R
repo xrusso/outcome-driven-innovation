@@ -14,7 +14,7 @@ source("ODI_functions.R")
 
 # import data 
 survey <- read.csv("mockdata.csv")
-outcomes <- survey[,1]   # define the column containing outcome names
+outcomes <-read.csv("mockoutcomes.csv") # define outcome IDs and names (in same order as they appear in data columns below)
 dem<-survey[,2:12]       # define the columns containing demographic data
 imp<-survey[,13:112]     # define the columns containing importance ratings (1 to 5)
 sat<-survey[,113:212]    # define the columns containing importance ratings (1 to 5)

@@ -20,6 +20,9 @@ othnames<-c("ID","Name","EmailAddress","JobTitle","OrgType","TeamSize","OrgSize"
 names<-c(othnames,impnames,satnames)
 names(survey)<-names
 
+#outcome info
+outcome_list<-data.frame(outcome_id=1:100,outcome_name=paste(rep("Outcome",100),formatC(1:100,width=3,flag="0"),sep=""))
+
 #assign ID, name, email
 survey[,1]<-ID; survey[,2]<-nam; survey[,3]<-em
 
@@ -127,3 +130,5 @@ survey[productd,113:212]<-sapply(survey[productd,113:212]+rnorm(100*length(produ
 #head(survey)
 #summary(survey)
 write.csv(survey,"mockdata.csv",row.names=FALSE)
+write.csv(outcome_list,"mockoutcomes.csv",row.names=FALSE)
+
